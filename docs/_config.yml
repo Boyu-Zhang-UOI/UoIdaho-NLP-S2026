@@ -1,0 +1,20 @@
+title: "NLP Course - University of Idaho (Spring 2026)"
+description: "Course materials for Natural Language Processing"
+baseurl: "/UoIdaho-NLP-S2026"
+url: "https://Boyu-Zhang-UOI.github.io"
+
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
