@@ -1,7 +1,7 @@
 Natural Language Processing — University of Idaho (Spring 2026)
 ================================================================
 
-Course materials for **CS 4/574: Natural Language Processing** at the University of Idaho.
+Course materials for **CS 4741/5741: Natural Language Processing** at the University of Idaho.
 
 📖 **View the course site:** https://Boyu-Zhang-UOI.github.io/UoIdaho-NLP-S2026/
 
