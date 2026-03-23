@@ -137,7 +137,7 @@ Sentences:
   [1] it focuses on the interaction between computers and human language!
   [2] nlp techniques are used in chatbots, search engines, and translation systems.
 
-Word tokens (30 total):
+Word tokens (38 total):
 ['natural', 'language', 'processing', '(', 'nlp', ')', 'is', 'a', 'sub-field', 'of', 'artificial', 'intelligence', '.', 'it', 'focuses', 'on', 'the', 'interaction', 'between', 'computers', 'and', 'human', 'language', '!', 'nlp', 'techniques', 'are', 'used', 'in', 'chatbots', ',', 'search', 'engines', ',', 'and', 'translation', 'systems', '.']
 </div>
 </div>
@@ -168,12 +168,14 @@ print(clean_tokens)
 <div class="cell output">
 <div class="cell-label">Out [4]:</div>
 <div class="cell-content">
-After removing punctuation (27 tokens):
+After removing punctuation (30 tokens):
 ['natural', 'language', 'processing', 'nlp', 'is', 'a', 'of', 'artificial', 'intelligence', 'it', 'focuses', 'on', 'the', 'interaction', 'between', 'computers', 'and', 'human', 'language', 'nlp', 'techniques', 'are', 'used', 'in', 'chatbots', 'search', 'engines', 'and', 'translation', 'systems']
 </div>
 </div>
 
 <div class="cell markdown">
+
+**Note:** `isalpha()` also removes hyphenated words like "sub-field" because the hyphen is not an alphabetic character. For tasks where compound words matter, you may want a more nuanced filter (e.g., replacing hyphens before filtering).
 
 ## Step 4: Stopword Removal
 
