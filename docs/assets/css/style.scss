@@ -1,0 +1,204 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ============================================
+   Jupyter Notebook Style for Course Materials
+   ============================================ */
+
+/* Notebook container */
+.notebook {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Cell base styling */
+.cell {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Markdown cell */
+.cell.markdown {
+  padding: 16px 20px;
+  border-left: 4px solid #42a5f5;
+}
+
+.cell.markdown h1,
+.cell.markdown h2,
+.cell.markdown h3,
+.cell.markdown h4 {
+  margin-top: 8px;
+}
+
+.cell.markdown p:last-child {
+  margin-bottom: 0;
+}
+
+/* Code cell */
+.cell.code {
+  position: relative;
+}
+
+.cell.code .cell-label {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  color: #303f9f;
+  font-weight: 600;
+  padding: 6px 12px 2px;
+  user-select: none;
+}
+
+.cell.code .cell-content {
+  padding: 0;
+}
+
+.cell.code .cell-content pre {
+  margin: 0;
+  padding: 10px 16px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.cell.code .cell-content code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 14px;
+}
+
+/* Output cell */
+.cell.output {
+  border-left: 4px solid #66bb6a;
+}
+
+.cell.output .cell-label {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  color: #2e7d32;
+  font-weight: 600;
+  padding: 6px 12px 2px;
+  user-select: none;
+}
+
+.cell.output .cell-content {
+  padding: 10px 16px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13px;
+  background-color: #fafafa;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Notebook navigation */
+.notebook-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.notebook-nav a {
+  padding: 8px 16px;
+  background-color: #1e6b43;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.notebook-nav a:hover {
+  background-color: #155724;
+}
+
+/* Section index cards */
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.section-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.section-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.section-card h3 {
+  margin-top: 0;
+  color: #1e6b43;
+}
+
+.section-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.section-card a {
+  text-decoration: none;
+  color: #1e6b43;
+  font-weight: 600;
+}
+
+/* Info/warning boxes */
+.info-box {
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.info-box.note {
+  background-color: #e3f2fd;
+  border-left: 4px solid #1976d2;
+}
+
+.info-box.tip {
+  background-color: #e8f5e9;
+  border-left: 4px solid #388e3c;
+}
+
+.info-box.warning {
+  background-color: #fff3e0;
+  border-left: 4px solid #f57c00;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
